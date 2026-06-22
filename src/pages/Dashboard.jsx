@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import AdminProfile from '../AdminComponents/AdminProfile';
 import GalleryManager from '../AdminComponents/GalleryManager';
 import TeacherManager from '../AdminComponents/TeacherManager';
+import NewsManager from '../AdminComponents/NewsManager';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -20,13 +21,7 @@ const Dashboard = () => {
         <AdminProfile />
         <GalleryManager />
         <TeacherManager />
-
-      <button 
-        onClick={handleLogout} 
-        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
-      >
-        Logout
-      </button>
+        <NewsManager />
     </div>
   );
 };

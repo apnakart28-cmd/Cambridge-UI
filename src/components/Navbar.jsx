@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import Logo from '../assets/logo.png'; // Aap apne logo ka path yahan set kar sakte hain
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +30,7 @@ function Navbar() {
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-3">
             {/* Agar aapke paas logo.png hai toh is img tag ko uncomment karein aur div ko hata dein */}
-            {/* <img src="/logo.png" alt="Oxford Public School" className="h-14" /> */}
-            <div className="w-12 h-12 bg-[#1E3A8A] text-white flex items-center justify-center font-bold text-xl rounded-full">
-              OPS
-            </div>
+            <img src={Logo} alt="Oxford Public School" className="h-14" />
             <div className="flex flex-col">
               <span className="text-xl md:text-2xl font-bold text-[#1E3A8A] leading-tight">
                 Oxford Public School
