@@ -29,30 +29,29 @@ function Navbar() {
           
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-3">
-            {/* Agar aapke paas logo.png hai toh is img tag ko uncomment karein aur div ko hata dein */}
             <img src={Logo} alt="Oxford Public School" className="h-14" />
             <div className="flex flex-col">
               <span className="text-xl md:text-2xl font-bold text-[#1E3A8A] leading-tight">
                 Oxford Public School
               </span>
-              <span className="text-xs text-slate-500 font-medium tracking-wider hidden sm:block">
-                DEVOTED QUALITY EDUCATION
-              </span>
             </div>
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden xl:flex items-center space-x-1">
-            <Link to="/" className={`px-3 py-2 rounded-md font-semibold transition-colors duration-300 ${isActive('/') ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'}`}>
+          {/* Desktop Menu - UI FIXES APPLIED HERE */}
+          <div className="hidden xl:flex items-center space-x-1 lg:space-x-2">
+            
+            {/* Added whitespace-nowrap and made font sizes consistent */}
+            <Link to="/" className={`px-2 xl:px-3 py-2 rounded-md text-sm xl:text-base font-semibold transition-colors duration-300 whitespace-nowrap ${isActive('/') ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'}`}>
               Home
             </Link>
-            <Link to="/about-us" className={`px-3 py-2 rounded-md font-semibold transition-colors duration-300 ${isActive('/about-us') ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'}`}>
+            
+            <Link to="/about-us" className={`px-2 xl:px-3 py-2 rounded-md text-sm xl:text-base font-semibold transition-colors duration-300 whitespace-nowrap ${isActive('/about-us') ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'}`}>
               About Us
             </Link>
 
             {/* Dropdown Menu for Messages */}
             <div className="relative group">
-              <button className={`flex items-center px-3 py-2 rounded-md font-semibold transition-colors duration-300 ${location.pathname.includes('/messages') ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'}`}>
+              <button className={`flex items-center px-2 xl:px-3 py-2 rounded-md text-sm xl:text-base font-semibold transition-colors duration-300 whitespace-nowrap ${location.pathname.includes('/messages') ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'}`}>
                 Messages <ChevronDown size={16} className="ml-1" />
               </button>
               
@@ -67,12 +66,12 @@ function Navbar() {
               </div>
             </div>
 
-            {/* Baaki Links */}
+            {/* Baaki Links[cite: 1] */}
             {navLinks.slice(2).map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-300 xl:text-base ${
+                className={`px-2 xl:px-3 py-2 rounded-md text-sm xl:text-base font-semibold transition-colors duration-300 whitespace-nowrap ${
                   isActive(link.path) ? 'text-[#F59E0B]' : 'text-slate-700 hover:text-[#F59E0B]'
                 }`}
               >
