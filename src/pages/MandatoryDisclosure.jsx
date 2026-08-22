@@ -2,8 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, Download, Info, Users, Building } from 'lucide-react';
 
+// Importing all PDF assets
+import certificateOfLand from '../assets/CERTIFICATE-OF-LAND.pdf';
+import mandatoryDisclosurePdf from '../assets/MANDATORY-PUBLIC-DISCLOSURE-2026.pdf';
+import pta from '../assets/PTA.pdf';
+import selfCertification from '../assets/Self-Certification.pdf';
+import academicCalendar from '../assets/academic-calendar.pdf';
+import feeStructure from '../assets/FEE-STRUCTURE-23-24.pdf';
+import nocStateGov from '../assets/NOC-FROM-STATE-GOVERNMENT.pdf';
+import smc from '../assets/SMC.pdf';
+import annualSchedule from '../assets/ANNUAL-SCHEDULE.pdf';
+import fireSafety from '../assets/FIRE-&-LIFE-SAFTY-CIRTIFICATE.pdf';
+import oxfordGrant from '../assets/OXFORD-GRANT-2026.pdf';
+import recognitionLetter from '../assets/RECOGNITATION-LETTER.pdf';
+import trustDeed from '../assets/Trust-Deed.pdf';
+import bookList from '../assets/book-list.pdf';
+import buildingCert from '../assets/BUILDING-CIRTIFICATE.pdf';
+import resultPdf from '../assets/result.pdf';
+import sectionWiseStudent from '../assets/SECTION-WISE-STUDENT.pdf';
+import waterHealthCert from '../assets/WATER-HEALTH-CIRTIFICATE.pdf';
+
 function MandatoryDisclosure() {
-  // Section A: General Information
+  // Section A: General Information[cite: 1]
   const generalInfo = [
     { id: 'gen-1', label: 'Name of the School', value: 'Oxford Public School' },
     { id: 'gen-2', label: 'Affiliation No. (If applicable)', value: '2133870' },
@@ -14,19 +34,29 @@ function MandatoryDisclosure() {
     { id: 'gen-7', label: 'Contact Details (Landline/Mobile)', value: '+91 9415847324' },
   ];
 
-  // Section B: Documents & Information
+  // Section B: Documents & Information (Updated with all your PDFs)[cite: 1]
   const documentsInfo = [
-    { id: 'doc-1', title: 'Copies of Affiliation/Upgradation Letter and Recent Extension of Affiliation', link: '/downloads/affiliation-letter.pdf' },
-    { id: 'doc-2', title: 'Copies of Societies/Trust/Company Registration/Renewal Certificate', link: '/downloads/trust-registration.pdf' },
-    { id: 'doc-3', title: 'Copy of No Objection Certificate (NOC) Issued by State Govt./UT', link: '/downloads/noc-state-gov.pdf' },
-    { id: 'doc-4', title: 'Copies of Recognition Certificate Under RTE Act, 2009', link: '/downloads/rte-recognition.pdf' },
-    { id: 'doc-5', title: 'Copy of Valid Building Safety Certificate as per the National Building Code', link: '/downloads/building-safety.pdf' },
-    { id: 'doc-6', title: 'Copy of Valid Fire Safety Certificate Issued by the Competent Authority', link: '/downloads/fire-safety.pdf' },
-    { id: 'doc-7', title: 'Copy of the DEO Certificate Submitted by the School for Affiliation', link: '/downloads/deo-certificate.pdf' },
-    { id: 'doc-8', title: 'Copies of Valid Water, Health and Sanitation Certificates', link: '/downloads/water-health-sanitation.pdf' },
+    { id: 'doc-1', title: 'Certificate of Land', link: certificateOfLand },
+    { id: 'doc-2', title: 'Mandatory Public Disclosure 2026', link: mandatoryDisclosurePdf },
+    { id: 'doc-3', title: 'PTA (Parent Teacher Association)', link: pta },
+    { id: 'doc-4', title: 'Self Certification', link: selfCertification },
+    { id: 'doc-5', title: 'Academic Calendar', link: academicCalendar },
+    { id: 'doc-6', title: 'Fee Structure (2023-24)', link: feeStructure },
+    { id: 'doc-7', title: 'NOC from State Government', link: nocStateGov },
+    { id: 'doc-8', title: 'SMC (School Management Committee)', link: smc },
+    { id: 'doc-9', title: 'Annual Schedule', link: annualSchedule },
+    { id: 'doc-10', title: 'Fire & Life Safety Certificate', link: fireSafety },
+    { id: 'doc-11', title: 'Oxford Grant 2026', link: oxfordGrant },
+    { id: 'doc-12', title: 'Recognition Letter', link: recognitionLetter },
+    { id: 'doc-13', title: 'Trust Deed', link: trustDeed },
+    { id: 'doc-14', title: 'Book List', link: bookList },
+    { id: 'doc-15', title: 'Building Certificate', link: buildingCert },
+    { id: 'doc-16', title: 'Result', link: resultPdf },
+    { id: 'doc-17', title: 'Section-wise Student Details', link: sectionWiseStudent },
+    { id: 'doc-18', title: 'Water, Health and Sanitation Certificate', link: waterHealthCert },
   ];
 
-  // Section C: Staff (Teaching)
+  // Section C: Staff (Teaching)[cite: 1]
   const staffInfo = [
     { id: 'staff-1', label: 'Principal', value: '1' },
     { id: 'staff-2', label: 'Total No. of Teachers', value: '45' },
@@ -38,7 +68,7 @@ function MandatoryDisclosure() {
     { id: 'staff-8', label: 'Details of Counsellor and Wellness Teacher', value: '1' },
   ];
 
-  // Section D: School Infrastructure
+  // Section D: School Infrastructure[cite: 1]
   const infrastructureInfo = [
     { id: 'infra-1', label: 'Total Campus Area of the School (in Sq Mtr)', value: '8000 Sq. Mtr.' },
     { id: 'infra-2', label: 'No. and Size of the Class Rooms (in Sq Mtr)', value: '40 (Approx 46 Sq. Mtr. each)' },
