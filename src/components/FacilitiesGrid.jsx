@@ -61,12 +61,12 @@ function FacilitiesGrid() {
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="w-8 h-1 bg-[#F59E0B] rounded-full"></span>
-            <span className="text-[#F59E0B] font-bold tracking-wider uppercase text-sm">Discover Our Campus</span>
-            <span className="w-8 h-1 bg-[#F59E0B] rounded-full"></span>
+            <span className="w-8 h-1 bg-[#DC2626] rounded-full"></span>
+            <span className="text-[#DC2626] font-bold tracking-wider uppercase text-sm">Discover Our Campus</span>
+            <span className="w-8 h-1 bg-[#DC2626] rounded-full"></span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1E3A8A] leading-tight">
-            Infrastructure & <span className="text-[#F59E0B]">Facilities</span>
+            Infrastructure & <span className="text-[#DC2626]">Facilities</span>
           </h2>
           <p className="mt-4 text-gray-600 text-lg">
             We provide a world-class environment equipped with top-notch facilities to ensure the overall growth and comfort of our students.
@@ -81,12 +81,12 @@ function FacilitiesGrid() {
               className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
             >
               {/* Icon Container */}
-              <div className="w-16 h-16 bg-[#E0E7FF] text-[#1E3A8A] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F59E0B] group-hover:text-white transition-colors duration-300">
+              <div className="w-16 h-16 bg-[#E0E7FF] text-[#1E3A8A] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#DC2626] group-hover:text-white transition-colors duration-300">
                 {facility.icon}
               </div>
               
               {/* Content */}
-              <h3 className="text-xl font-bold text-[#1E3A8A] mb-3 group-hover:text-[#F59E0B] transition-colors duration-300">
+              <h3 className="text-xl font-bold text-[#1E3A8A] mb-3 group-hover:text-[#DC2626] transition-colors duration-300">
                 {facility.name}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">

@@ -9,7 +9,7 @@ function ContactBanner() {
   const { schoolProfile } = useSchoolProfile();
 
   // Data mapping with fallbacks
-  const schoolName = schoolProfile?.schoolName || "Oxford Public School";
+  const schoolName = schoolProfile?.schoolName || "Cambridge Public School";
   const phone = schoolProfile?.primaryPhone || "+91 98765 43210";
   
   // Working hours formatting
@@ -23,7 +23,7 @@ function ContactBanner() {
       {/* Background with Gradient and Shape */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] to-[#152C6B] rounded-3xl mx-4 lg:mx-8 shadow-2xl overflow-hidden">
         {/* Abstract Background Shapes for Texture */}
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#F59E0B] opacity-20 rounded-full blur-3xl"></div>
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#DC2626] opacity-20 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl"></div>
       </div>
 
@@ -33,7 +33,7 @@ function ContactBanner() {
           {/* Text Content */}
           <div className="w-full lg:w-2/3 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
-              Ready to Shape Your Child's <span className="text-[#F59E0B]">Future?</span>
+              Ready to Shape Your Child's <span className="text-[#DC2626]">Future?</span>
             </h2>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 font-medium">
               Admissions are now open for the upcoming academic session. Join {schoolName} and give your child the education they deserve.
@@ -42,11 +42,11 @@ function ContactBanner() {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-8">
               <div className="flex items-center gap-3 text-white">
                 <div className="bg-white/20 p-2.5 rounded-full">
-                  <PhoneCall size={20} className="text-[#F59E0B]" />
+                  <PhoneCall size={20} className="text-[#DC2626]" />
                 </div>
                 <div className="text-left">
                   <p className="text-xs text-gray-300 uppercase tracking-wider font-semibold">Call Us Today</p>
-                  <a href={`tel:${phone}`} className="text-lg font-bold hover:text-[#F59E0B] transition-colors duration-300">
+                  <a href={`tel:${phone}`} className="text-lg font-bold hover:text-[#DC2626] transition-colors duration-300">
                     {phone}
                   </a>
                 </div>
@@ -56,7 +56,7 @@ function ContactBanner() {
               
               <div className="flex items-center gap-3 text-white">
                 <div className="bg-white/20 p-2.5 rounded-full">
-                  <CalendarDays size={20} className="text-[#F59E0B]" />
+                  <CalendarDays size={20} className="text-[#DC2626]" />
                 </div>
                 <div className="text-left">
                   <p className="text-xs text-gray-300 uppercase tracking-wider font-semibold">Working Hours</p>
@@ -70,7 +70,7 @@ function ContactBanner() {
           <div className="w-full lg:w-1/3 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center items-center lg:items-end">
             <Link 
               to="/contact-us" 
-              className="w-full sm:w-auto lg:w-full max-w-xs flex items-center justify-center gap-2 bg-[#F59E0B] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-[#1E3A8A] transition-all duration-300 shadow-lg group"
+              className="w-full sm:w-auto lg:w-full max-w-xs flex items-center justify-center gap-2 bg-[#DC2626] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-[#1E3A8A] transition-all duration-300 shadow-lg group"
             >
               Contact Us Now
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />

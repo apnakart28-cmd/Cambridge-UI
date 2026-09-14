@@ -5,7 +5,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 // 🛑 IMAGE IMPORT (Sabse safe tareeqa)
 // Apni image ko src/assets folder me rakhein aur yahan aise import karein:
 // Dhyan dein: Agar aapka HeroSlider kisi aur folder me hai, toh path ('../../assets/...') apne hisab se adjust kar lein.
-import bgImage from '../assets/oxford-hero.jpeg'; 
+// Image ka naam 'cambridge-hero.jpeg' kar diya gaya hai, ise apne assets ke anusar adjust kar lein.
+import bgImage from '../assets/oxford-hero.jpeg'; // <-- Yahan apni image ka path aur naam adjust karein
 
 function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,7 +14,7 @@ function HeroSlider() {
   const slides = [
     {
       id: 1,
-      title: "Welcome To Oxford School",
+      title: "Welcome To Cambridge Public School",
       subtitle: "Empowering students with knowledge, skills, and values for a brighter future.",
       buttonText: "Learn More",
       link: "/about-us"
@@ -54,8 +55,8 @@ function HeroSlider() {
       
       {/* 1. BACKGROUND IMAGE */}
       <img
-        src={bgImage} // Upar import kiya hua variable yahan use kiya
-        alt="Oxford Public School Campus"
+        src={bgImage} 
+        alt="Cambridge Public School Campus"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
       
@@ -80,7 +81,7 @@ function HeroSlider() {
           </p>
           <Link
             to={slide.link}
-            className="bg-[#F59E0B] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-white hover:text-[#1E3A8A] transition-colors duration-300 shadow-lg"
+            className="bg-[#DC2626] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-white hover:text-[#1E3A8A] transition-colors duration-300 shadow-lg"
           >
             {slide.buttonText}
           </Link>
@@ -90,13 +91,13 @@ function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-[#F59E0B] text-white p-2 rounded-full backdrop-blur-sm transition-all duration-300"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-[#DC2626] text-white p-2 rounded-full backdrop-blur-sm transition-all duration-300"
       >
         <ChevronLeft size={32} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-[#F59E0B] text-white p-2 rounded-full backdrop-blur-sm transition-all duration-300"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-[#DC2626] text-white p-2 rounded-full backdrop-blur-sm transition-all duration-300"
       >
         <ChevronRight size={32} />
       </button>
@@ -108,7 +109,7 @@ function HeroSlider() {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "bg-[#F59E0B] w-8" : "bg-white/50 w-3 hover:bg-white"
+              index === currentSlide ? "bg-[#DC2626] w-8" : "bg-white/50 w-3 hover:bg-white"
             }`}
           />
         ))}

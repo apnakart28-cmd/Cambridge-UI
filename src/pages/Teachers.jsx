@@ -42,17 +42,17 @@ function Teachers() {
         {/* Background Patterns */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#F59E0B] rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#DC2626] rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
-            Our <span className="text-[#F59E0B]">Faculty</span>
+            Our <span className="text-[#DC2626]">Faculty</span>
           </h1>
           <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base font-medium">
-            <Link to="/" className="hover:text-[#F59E0B] transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#DC2626] transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-[#F59E0B]">Teachers</span>
+            <span className="text-[#DC2626]">Teachers</span>
           </div>
         </div>
       </div>
@@ -63,9 +63,9 @@ function Teachers() {
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="w-8 h-1 bg-[#F59E0B] rounded-full"></span>
-            <span className="text-[#F59E0B] font-bold tracking-wider uppercase text-sm">Meet Our Team</span>
-            <span className="w-8 h-1 bg-[#F59E0B] rounded-full"></span>
+            <span className="w-8 h-1 bg-[#DC2626] rounded-full"></span>
+            <span className="text-[#DC2626] font-bold tracking-wider uppercase text-sm">Meet Our Team</span>
+            <span className="w-8 h-1 bg-[#DC2626] rounded-full"></span>
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E3A8A] mb-4">
             Inspiring the Leaders of Tomorrow
@@ -79,7 +79,7 @@ function Teachers() {
         {loading ? (
           <div className="flex flex-col justify-center items-center py-20 space-y-4">
              <div className="relative">
-              <div className="absolute inset-0 bg-[#F59E0B] rounded-full blur-xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-[#DC2626] rounded-full blur-xl opacity-20 animate-pulse"></div>
               <Loader2 className="animate-spin text-[#1E3A8A] relative z-10" size={56} />
             </div>
             <h3 className="text-xl font-bold text-[#1E3A8A] animate-pulse">Loading Faculty Details...</h3>
@@ -102,7 +102,7 @@ function Teachers() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1E3A8A]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                      <button className="bg-[#F59E0B] text-white p-3 rounded-full hover:bg-white hover:text-[#F59E0B] transition-colors shadow-lg">
+                      <button className="bg-[#DC2626] text-white p-3 rounded-full hover:bg-white hover:text-[#DC2626] transition-colors shadow-lg">
                         <Mail size={20} />
                       </button>
                     </div>
@@ -112,7 +112,7 @@ function Teachers() {
                   <div className="p-6 text-center">
                     <h3 className="text-xl font-bold text-[#1E3A8A] mb-1">{teacher.name}</h3>
                     {/* Backend mein designation nahi tha toh qualification dikha rahe hain */}
-                    <p className="text-[#F59E0B] font-semibold text-sm mb-4">
+                    <p className="text-[#DC2626] font-semibold text-sm mb-4">
                       {teacher.qualification || 'Faculty Member'}
                     </p>
                     

@@ -17,14 +17,14 @@ function EducationHighlight() {
         {/* Top Text Content */}
         <div className="max-w-3xl mx-auto text-center text-white mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-            Devoted to <span className="text-[#F59E0B]">Quality Education</span> Since 2014
+            Devoted to <span className="text-[#DC2626]">Quality Education</span> Since 2014
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-8 font-medium">
             We provide a vibrant learning environment that fosters innovation, critical thinking, and a lifelong love for learning in every child.
           </p>
           <Link 
             to="/contact-us" 
-            className="inline-block bg-[#F59E0B] text-white px-8 py-3.5 rounded-md font-bold text-lg hover:bg-white hover:text-[#1E3A8A] transition-all duration-300 shadow-lg transform hover:-translate-y-1"
+            className="inline-block bg-[#DC2626] text-white px-8 py-3.5 rounded-md font-bold text-lg hover:bg-white hover:text-[#1E3A8A] transition-all duration-300 shadow-lg transform hover:-translate-y-1"
           >
             Apply for Admission
           </Link>
@@ -35,7 +35,7 @@ function EducationHighlight() {
           
           {/* Feature Card 1 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl text-center hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 group">
-            <div className="w-16 h-16 mx-auto bg-[#F59E0B] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+            <div className="w-16 h-16 mx-auto bg-[#DC2626] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
               <Lightbulb size={32} className="text-white" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Smart Classrooms</h3>
@@ -46,7 +46,7 @@ function EducationHighlight() {
 
           {/* Feature Card 2 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl text-center hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 group">
-            <div className="w-16 h-16 mx-auto bg-[#F59E0B] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+            <div className="w-16 h-16 mx-auto bg-[#DC2626] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
               <GraduationCap size={32} className="text-white" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Expert Faculty</h3>
@@ -57,7 +57,7 @@ function EducationHighlight() {
 
           {/* Feature Card 3 */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl text-center hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 group">
-            <div className="w-16 h-16 mx-auto bg-[#F59E0B] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+            <div className="w-16 h-16 mx-auto bg-[#DC2626] rounded-full flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
               <Trophy size={32} className="text-white" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Excellence Awards</h3>

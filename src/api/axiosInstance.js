@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Ek naya instance create karein
 const apiClient = axios.create({
-  baseURL: 'https://oxfordpublicschool.onrender.com', // Aapka Base URL
+  baseURL: 'https://cambridge-server-62kv.onrender.com', // Aapka Base URL
   headers: {
     'Content-Type': 'application/json',
   },

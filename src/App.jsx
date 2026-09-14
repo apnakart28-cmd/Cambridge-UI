@@ -18,8 +18,6 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
 import Infrastructure from './pages/Infrastructure';
-import Manager from './pages/Manager';
-import MandatoryDisclosure from './pages/MandatoryDisclosure';
 import Principal from './pages/Principal';
 import Teachers from './pages/Teachers';
 
@@ -65,16 +63,8 @@ function App() {
                   element={<PageTitle title="About Us"><AboutUs /></PageTitle>} 
                 />
                 <Route 
-                  path="/messages/manager" 
-                  element={<PageTitle title="Manager's Message"><Manager /></PageTitle>} 
-                />
-                <Route 
                   path="/messages/principal" 
                   element={<PageTitle title="Principal's Message"><Principal /></PageTitle>} 
-                />
-                <Route 
-                  path="/mandatory-disclosure" 
-                  element={<PageTitle title="Mandatory Disclosure"><MandatoryDisclosure /></PageTitle>} 
                 />
                 <Route 
                   path="/teachers" 

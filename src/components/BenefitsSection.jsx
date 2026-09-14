@@ -50,12 +50,12 @@ function BenefitsSection() {
           {/* Left Side: Text and Benefits List */}
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-8 h-1 bg-[#F59E0B] rounded-full"></span>
-              <span className="text-[#F59E0B] font-bold tracking-wider uppercase text-sm">Why Choose Us</span>
+              <span className="w-8 h-1 bg-[#DC2626] rounded-full"></span>
+              <span className="text-[#DC2626] font-bold tracking-wider uppercase text-sm">Why Choose Us</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1E3A8A] leading-tight mb-6">
-              Benefits of Learning at <span className="text-[#F59E0B]">Oxford</span>
+              Benefits of Learning at <span className="text-[#DC2626]">Cambridge</span>
             </h2>
             
             <p className="text-gray-600 mb-10 text-lg">
@@ -66,7 +66,7 @@ function BenefitsSection() {
             <div className="space-y-6">
               {benefits.map((benefit) => (
                 <div key={benefit.id} className="flex items-start gap-4 group">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#E0E7FF] text-[#1E3A8A] flex items-center justify-center group-hover:bg-[#F59E0B] group-hover:text-white transition-colors duration-300 shadow-sm">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#E0E7FF] text-[#1E3A8A] flex items-center justify-center group-hover:bg-[#DC2626] group-hover:text-white transition-colors duration-300 shadow-sm">
                     {benefit.icon}
                   </div>
                   <div>
@@ -94,7 +94,7 @@ function BenefitsSection() {
               />
               
               {/* Overlay Stat Box */}
-              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-[#F59E0B]">
+              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-[#DC2626]">
                 <p className="text-3xl font-extrabold text-[#1E3A8A]">10+</p>
                 <p className="text-sm font-bold text-gray-800">Years of</p>
                 <p className="text-sm text-gray-600">Educational Excellence</p>

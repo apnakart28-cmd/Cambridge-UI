@@ -47,17 +47,17 @@ function Gallery() {
       <div className="bg-[#1E3A8A] py-16 lg:py-24 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#F59E0B] rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#DC2626] rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
-            Photo <span className="text-[#F59E0B]">Gallery</span>
+            Photo <span className="text-[#DC2626]">Gallery</span>
           </h1>
           <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base font-medium">
-            <Link to="/" className="hover:text-[#F59E0B] transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#DC2626] transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-[#F59E0B]">Gallery</span>
+            <span className="text-[#DC2626]">Gallery</span>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ function Gallery() {
         {/* Intro Text */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="text-gray-600 text-lg">
-            A glimpse into the vibrant life at Oxford Public School. Explore our campus, academic activities, sports events, and cultural celebrations.
+            A glimpse into the vibrant life at Cambridge Public School. Explore our campus, academic activities, sports events, and cultural celebrations.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ function Gallery() {
         {loading ? (
           <div className="flex flex-col justify-center items-center py-32 space-y-4">
             <div className="relative">
-              <div className="absolute inset-0 bg-[#F59E0B] rounded-full blur-xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-[#DC2626] rounded-full blur-xl opacity-20 animate-pulse"></div>
               <Loader2 className="animate-spin text-[#1E3A8A] relative z-10" size={56} />
             </div>
             <h3 className="text-xl font-bold text-[#1E3A8A] animate-pulse">Loading amazing moments...</h3>
@@ -109,13 +109,13 @@ function Gallery() {
                 >
                   <img 
                     src={item.imageUrl} // SRC updated to imageUrl
-                    alt={item.caption || "Oxford School Event"} 
+                    alt={item.caption || "Cambridge School Event"} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     loading="lazy"
                   />
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-[#1E3A8A]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                    <div className="bg-[#F59E0B] p-3 rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 mb-3">
+                    <div className="bg-[#DC2626] p-3 rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 mb-3">
                       <Maximize2 size={24} />
                     </div>
                     {/* Caption logic: agar khali hai toh default text dikhaye */}
@@ -144,7 +144,7 @@ function Gallery() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm">
           <button 
             onClick={() => setSelectedImage(null)}
-            className="absolute top-6 right-6 text-white hover:text-[#F59E0B] transition-colors z-50 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-md"
+            className="absolute top-6 right-6 text-white hover:text-[#DC2626] transition-colors z-50 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-md"
           >
             <X size={32} />
           </button>

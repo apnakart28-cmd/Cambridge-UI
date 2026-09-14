@@ -9,11 +9,11 @@ function ContactUs() {
   // Context se data fetch karein
   const { schoolProfile } = useSchoolProfile();
 
-  // Data mapping with fallbacks
+  // Data mapping with fallbacks for Cambridge Public School
   const address = schoolProfile?.address || "Raskoopa Bahadurpur, Kanth, Shahjahanpur, U.P. Pin-242223";
   const primaryPhone = schoolProfile?.primaryPhone || "+91 9415847324";
   const alternatePhone = schoolProfile?.alternatePhone; // Agar ho toh dikhayenge
-  const email = schoolProfile?.email || "info@opsspn.in";
+  const email = schoolProfile?.email || "info@cps.in";
   
   // Working hours formatting from API
   const workingDays = schoolProfile?.workingHours?.mondayToFriday || "8:00 AM - 2:00 PM";
@@ -42,17 +42,17 @@ function ContactUs() {
         {/* Background Patterns */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#F59E0B] rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#DC2626] rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
-            Contact <span className="text-[#F59E0B]">Us</span>
+            Contact <span className="text-[#DC2626]">Us</span>
           </h1>
           <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base font-medium">
-            <Link to="/" className="hover:text-[#F59E0B] transition-colors">Home</Link>
+            <Link to="/" className="hover:text-[#DC2626] transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-[#F59E0B]">Contact</span>
+            <span className="text-[#DC2626]">Contact</span>
           </div>
         </div>
       </div>
@@ -65,8 +65,8 @@ function ContactUs() {
           <div className="w-full lg:w-5/12">
             <div className="mb-8">
               <div className="flex items-center gap-2 mb-4">
-                <span className="w-8 h-1 bg-[#F59E0B] rounded-full"></span>
-                <span className="text-[#F59E0B] font-bold tracking-wider uppercase text-sm">Get In Touch</span>
+                <span className="w-8 h-1 bg-[#DC2626] rounded-full"></span>
+                <span className="text-[#DC2626] font-bold tracking-wider uppercase text-sm">Get In Touch</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E3A8A] mb-4">
                 We're Here to Help You
@@ -92,14 +92,14 @@ function ContactUs() {
 
               {/* Phone Card */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition-shadow">
-                <div className="bg-[#FFFBEB] text-[#F59E0B] p-4 rounded-full flex-shrink-0">
+                <div className="bg-[#FEE2E2] text-[#DC2626] p-4 rounded-full flex-shrink-0">
                   <Phone size={24} />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#1E3A8A] mb-1">Phone Number</h3>
-                  <p className="text-gray-600">Main Office: <a href={`tel:${primaryPhone}`} className="hover:text-[#F59E0B]">{primaryPhone}</a></p>
+                  <p className="text-gray-600">Main Office: <a href={`tel:${primaryPhone}`} className="hover:text-[#DC2626]">{primaryPhone}</a></p>
                   {alternatePhone && (
-                    <p className="text-gray-600">Alternate: <a href={`tel:${alternatePhone}`} className="hover:text-[#F59E0B]">{alternatePhone}</a></p>
+                    <p className="text-gray-600">Alternate: <a href={`tel:${alternatePhone}`} className="hover:text-[#DC2626]">{alternatePhone}</a></p>
                   )}
                 </div>
               </div>
@@ -111,13 +111,13 @@ function ContactUs() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#1E3A8A] mb-1">Email Address</h3>
-                  <p className="text-gray-600"><a href={`mailto:${email}`} className="hover:text-[#F59E0B]">{email}</a></p>
+                  <p className="text-gray-600"><a href={`mailto:${email}`} className="hover:text-[#DC2626]">{email}</a></p>
                 </div>
               </div>
 
               {/* Working Hours Card */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition-shadow">
-                <div className="bg-[#FFFBEB] text-[#F59E0B] p-4 rounded-full flex-shrink-0">
+                <div className="bg-[#FEE2E2] text-[#DC2626] p-4 rounded-full flex-shrink-0">
                   <Clock size={24} />
                 </div>
                 <div>
@@ -150,7 +150,7 @@ function ContactUs() {
                         type="text" 
                         required
                         placeholder="John Doe" 
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626] focus:border-transparent transition-all"
                       />
                     </div>
                     <div className="space-y-2">
@@ -159,7 +159,7 @@ function ContactUs() {
                         type="email" 
                         required
                         placeholder="john@example.com" 
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626] focus:border-transparent transition-all"
                       />
                     </div>
                   </div>
@@ -171,12 +171,12 @@ function ContactUs() {
                         type="tel" 
                         required
                         placeholder="+91 9876543210" 
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626] focus:border-transparent transition-all"
                       />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-semibold text-gray-700">Subject</label>
-                      <select className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent transition-all text-gray-700">
+                      <select className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626] focus:border-transparent transition-all text-gray-700">
                         <option value="admission">Admission Inquiry</option>
                         <option value="general">General Query</option>
                         <option value="feedback">Feedback / Suggestion</option>
@@ -191,7 +191,7 @@ function ContactUs() {
                       required
                       rows="5"
                       placeholder="How can we help you?" 
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#DC2626] focus:border-transparent transition-all resize-none"
                     ></textarea>
                   </div>
 
@@ -199,7 +199,7 @@ function ContactUs() {
                     type="submit" 
                     disabled={formStatus === 'submitting'}
                     className={`w-full py-4 rounded-xl text-white font-bold text-lg flex items-center justify-center gap-2 transition-all duration-300 shadow-md ${
-                      formStatus === 'submitting' ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#1E3A8A] hover:bg-[#F59E0B] hover:shadow-lg'
+                      formStatus === 'submitting' ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#1E3A8A] hover:bg-[#DC2626] hover:shadow-lg'
                     }`}
                   >
                     {formStatus === 'submitting' ? 'Sending...' : 'Send Message'}
@@ -215,8 +215,8 @@ function ContactUs() {
         <div className="mt-16 bg-white p-4 rounded-3xl shadow-sm border border-gray-100">
           <div className="w-full h-[450px] rounded-2xl overflow-hidden relative">
             <iframe 
-              title="School Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3528.637489119691!2d79.81264287547147!3d27.820927276117594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399fb94eede6aa29%3A0xc7ae4dfee040c67c!2sOxford%20Public%20School!5e0!3m2!1sen!2sin!4v1782073822732!5m2!1sen!2sin" 
+              title="Cambridge Public School Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1687.6527941063214!2d79.73962745276114!3d27.967233650734176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399feb761678baa5%3A0x9e4513850e2cf3f1!2sCambridge%20Public%20school%2C%20Station%20Road%20Tilhar!5e0!3m2!1sen!2sin!4v1789366887320!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
