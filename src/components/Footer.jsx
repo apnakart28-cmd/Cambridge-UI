@@ -16,8 +16,8 @@ function Footer() {
   // Safe extraction with fallbacks for Cambridge Public School
   const schoolName = schoolProfile?.schoolName || "Cambridge Public School";
   const address = schoolProfile?.address || "By Pass Chauraha, Tilhar, National Highway 30, Tilhar, Uttar Pradesh 242307, India";
-  const phone = schoolProfile?.primaryPhone || "+91 9415847324";
-  const email = schoolProfile?.email || "info@cps.in";
+  const phone = schoolProfile?.primaryPhone || "+91 9935719994, 8853693201";
+  const email = schoolProfile?.email || "cambridgepublicschool2026@gmail.com";
   const social = schoolProfile?.socialLinks || {};
 
   // School name ko do line me todne ke liye (Cambridge alag, Public School alag)
@@ -124,12 +124,6 @@ function Footer() {
                   <ChevronRight size={14} className="mr-2 text-gray-500 group-hover:text-[#DC2626] group-hover:translate-x-1 transition-all" />
                   Photo Gallery
                 </Link>
-              </li>
-              <li>
-                <a href="/books.pdf" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[#DC2626] transition-colors duration-300 flex items-center group">
-                  <ChevronRight size={14} className="mr-2 text-gray-500 group-hover:text-[#DC2626] group-hover:translate-x-1 transition-all" />
-                  List of Books
-                </a>
               </li>
               <li>
                 <Link to="/contact-us" className="text-sm hover:text-[#DC2626] transition-colors duration-300 flex items-center group">

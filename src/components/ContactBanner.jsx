@@ -10,7 +10,7 @@ function ContactBanner() {
 
   // Data mapping with fallbacks
   const schoolName = schoolProfile?.schoolName || "Cambridge Public School";
-  const phone = schoolProfile?.primaryPhone || "+91 98765 43210";
+  const phone = schoolProfile?.primaryPhone || "+91 9935719994, 8853693201";
   
   // Working hours formatting
   // Agar API me working hours hain toh unhe use karein, warna default dikhayein

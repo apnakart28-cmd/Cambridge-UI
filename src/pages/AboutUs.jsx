@@ -1,7 +1,7 @@
 import React from 'react';
 import { Target, Eye, Award, BookOpen, Heart, Shield, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import aboutImage from '../assets/aboutUs.jpg'; // Example local image import
+import aboutImage from '../assets/oxford-hero.png'; // Example local image import
 
 function AboutUs() {
   return (

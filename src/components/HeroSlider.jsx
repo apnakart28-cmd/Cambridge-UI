@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 // Apni image ko src/assets folder me rakhein aur yahan aise import karein:
 // Dhyan dein: Agar aapka HeroSlider kisi aur folder me hai, toh path ('../../assets/...') apne hisab se adjust kar lein.
 // Image ka naam 'cambridge-hero.jpeg' kar diya gaya hai, ise apne assets ke anusar adjust kar lein.
-import bgImage from '../assets/oxford-hero.jpeg'; // <-- Yahan apni image ka path aur naam adjust karein
+import bgImage from '../assets/oxford-hero.png'; // <-- Yahan apni image ka path aur naam adjust karein
 
 function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);

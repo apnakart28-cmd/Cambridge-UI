@@ -10,10 +10,10 @@ function ContactUs() {
   const { schoolProfile } = useSchoolProfile();
 
   // Data mapping with fallbacks for Cambridge Public School
-  const address = schoolProfile?.address || "Raskoopa Bahadurpur, Kanth, Shahjahanpur, U.P. Pin-242223";
-  const primaryPhone = schoolProfile?.primaryPhone || "+91 9415847324";
+  const address = schoolProfile?.address || "By Pass Chauraha, Tilhar, National Highway 30, Tilhar, Uttar Pradesh 242307, India";
+  const primaryPhone = schoolProfile?.primaryPhone || "+91 9935719994, 8853693201";
   const alternatePhone = schoolProfile?.alternatePhone; // Agar ho toh dikhayenge
-  const email = schoolProfile?.email || "info@cps.in";
+  const email = schoolProfile?.email || "cambridgepublicschool2026@gmail.com";
   
   // Working hours formatting from API
   const workingDays = schoolProfile?.workingHours?.mondayToFriday || "8:00 AM - 2:00 PM";
