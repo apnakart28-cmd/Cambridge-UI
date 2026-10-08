@@ -28,7 +28,7 @@ function ManagerMessage() {
 
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-1">
-                Mr. Lucky Verma
+                Mrs. Lucky Verma
               </h2>
               <span className="inline-block px-4 py-1 bg-[#1E3A8A] text-white text-sm font-semibold rounded-full mt-2">
                 Director / Manager
