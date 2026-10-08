@@ -24,6 +24,7 @@ import Teachers from './pages/Teachers';
 // Auth Pages
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import ManagerMessage from './components/ManagerMessage';
 
 // --- DYNAMIC TITLE COMPONENT ---
 // Ye component apne andar aane wale (children) page ko render karega 
@@ -63,8 +64,12 @@ function App() {
                   element={<PageTitle title="About Us"><AboutUs /></PageTitle>} 
                 />
                 <Route 
-                  path="/messages/principal" 
+                  path="/administrator/principal-message" 
                   element={<PageTitle title="Principal's Message"><Principal /></PageTitle>} 
+                />
+                <Route 
+                  path="/administrator/manager-message" 
+                  element={<PageTitle title="Manager's Message"><ManagerMessage/></PageTitle>} 
                 />
                 <Route 
                   path="/teachers" 
