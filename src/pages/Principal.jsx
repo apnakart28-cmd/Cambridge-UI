@@ -30,7 +30,7 @@ function Principal() {
 
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-1">
-                Sryanchal Dwivedi
+                Suryanchal Dwivedi
               </h2>
               
               <div className="flex items-center justify-center gap-2 mt-2">
@@ -67,7 +67,7 @@ function Principal() {
                 <div className="mt-4">
                   {/* Digital Signature Placeholder */}
                   <h3 className="text-xl font-bold text-[#1E3A8A] italic" style={{ fontFamily: 'cursive' }}>
-                    Sryanchal Dwivedi 
+                   Suryanchal Dwivedi
                   </h3>
                   <p className="text-sm text-gray-500 mt-1">
                     Principal, Cambridge Public School
